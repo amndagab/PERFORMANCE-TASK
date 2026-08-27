@@ -1,0 +1,267 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {position: sticky; top: 0; z-index: 1000;}
+            nav ul{display: flex; list-style: none; margin: 0;padding: 0;gap: 65px; align-items: center; font-size: x-large; 
+                margin-top: 5px; justify-content: center;} 
+            nav a{color: var(--light-yellow); 
+                text-decoration: none; 
+                font-family: 'Roboto Serif';
+                font-weight: bold; 
+                align-items: center; 
+                display: inline-block;
+                transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);} 
+            nav a:hover{
+                color: var(--bright-yellow); 
+                text-shadow: 0 0 10px rgb(255, 219, 140); 
+                transform: translateY(-9px) scale(1.20);}
+            nav{ justify-content: center; 
+                align-items: center;
+                background-color: rgba(57, 0, 0, 0.722); 
+                color: var(--bright-yellow); 
+                width: 100%;
+                padding: 15px 30px;
+                gap: 10px; 
+                box-sizing: border-box; 
+                display: flex;  
+                flex-direction: column;}
+
+:root{
+    --light-yellow: rgb(251, 236, 212);
+    --bright-yellow: rgb(255, 198, 74);
+    --dark-red: rgba(31, 0, 0, 0.722);
+    --bright-red: rgb(99, 5, 5);
+}
+
+header{ justify-content: center; 
+                align-items: center;
+                background-color: rgba(57, 0, 0, 0.722); 
+                color: var(--bright-yellow); 
+                gap: 10px; 
+                width: 100%;
+                padding: 30px;
+                box-sizing: border-box; 
+                display: flex; 
+                flex-direction: column;}
+
+ header h1{
+    margin: 0;
+    font-size: 130px;
+    font-family: 'Uncial Antiqua';
+    margin-bottom: 10px;
+    text-shadow: 0 4px 12px black;
+    margin-top: 5px;
+}
+
+h1 {line-height: 1.1;}
+
+.martial-law-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.597);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.martial-law-popup {
+    background-color: rgba(57, 0, 0, 0.97);
+    color: var(--light-yellow);
+
+    width: 70%;
+    max-width: 900px;
+
+    padding: 35px;
+    border-radius: 15px;
+
+    box-shadow: 0 0 30px rgba(255, 240, 101, 0.519);
+
+    text-align: left;
+}
+
+.martial-law-popup h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.martial-law-popup p {
+    line-height: 1.6;
+    text-indent: 30px;
+}
+
+.martial-law-popup button {
+    display: block;
+    margin: 25px auto 0;
+
+    padding: 10px 25px;
+
+    background-color: var(--light-yellow);
+    color: rgb(57, 0, 0);
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.martial-law-popup button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgb(255, 219, 140);
+}
+
+.panimula {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    background-color: rgba(255, 240, 150, 0.75);
+
+    width: fit-content;
+    margin: 20px 0 20px 60px;
+    padding: 15px 25px;
+
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+
+.easter-egg {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.easter-egg:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    font-family: 'Lilita One';
+    font-size: 90px;
+    text-align: center;
+    color: var(--bright-yellow);
+    text-shadow: black;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    box-shadow: 0 10px 30px rgb(52, 1, 1)
+
+}
+
+h4 {
+    font-family: 'Stick';
+    font-size: 45px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 600px;
+    background-color:rgba(255, 255, 163, 0.727);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--bright-red);
+    box-shadow: 0 10px 30px rgb(52, 1, 1)
+}
+
+.panimula h4 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+     width: auto;
+}
+
+h5{
+    font-family: 'Stick';
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 630px;
+    margin-top: 0px;
+    background-color:rgba(255, 255, 163, 0.727);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--bright-red);
+    box-shadow: 0 10px 30px rgb(52, 1, 1)
+}
+
+h6{
+    font-family: 'Stick';
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    background-color:rgba(255, 255, 163, 0.727);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--bright-red);
+    box-shadow: 0 10px 30px rgb(52, 1, 1)
+}
+
+.video-link {
+    color: rgb(255, 204, 0);
+    text-shadow: 0px 2px 10px black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.video-link:hover {
+    color: rgb(255, 226, 120);
+    text-shadow: 0px 1px 5px black;
+    display: inline-block;
+    transform: translateY(-4px) scale(1.09);
+}
+
+body{
+    background-image: url(filipino-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-section{
+    text-align: justify;
+    background-color:rgba(255, 246, 163, 0.727);
+    padding: 30px;
+    font-size: 25px;
+    border-radius: 12px;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(--bright-red);
+    font-family: 'EB Garamond';
+    margin-bottom: 10px;
+    box-shadow: 0 10px 30px rgb(52, 1, 1);
+}
+
+.text-section p {
+    text-indent: 30px;
+}
+
+video {
+    display: block;
+    width: 94%;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    object-fit: cover;
+}   
